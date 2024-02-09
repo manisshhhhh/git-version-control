@@ -1,0 +1,58 @@
+-------------------------------------------------------------------------------------------------
+1.git version control :git init 
+
+some imp command while working with git:
+
+git status : check the changes and staging area file or not 
+git log : (for past commit who and when)
+git branch: ( for checking curring working branch)
+git diff <file_name> (for checking file changes)
+git checkout <file_name> (for roll back to prev file version)
+git rm --cached -r .   (for remove all file from staging area)
+
+--------------------------------------------------------------------------------------------------
+2. git remote repo(gitHub)
+
+when creating repo for first time( written in repo des also when u create new repo)
+git remote add origin http...
+git branch -M main
+git push -u oring main
+
+when u want to commit change remotly : 
+
+i.git add.
+ii.git commit -m 'whatever u have done'
+iii.git push origin main -u
+
+---------------------------------------------------------------------------------------------------
+3. Git ignore: put the file that u don't want to share in public repo in .gitignore file 
+
+for removing file from staging area : ' git rm --cached -r '
+-----------------------------------------------------------------------------------------------------
+4.Cloning : how to download & create a copy of repo 
+git clone url(http:...)
+
+
+
+-----------------------------------------------------------------------------------------------------
+5 .  Branching and meeging: working on multiple branch while working on a big projects.
+
+main         1.O-----2.O----3.O------4.O-----5.O
+                         \          /
+Feature1                  3.O----4.O
+
+Feature2
+
+
+why : because some time u are developing new Feature , fixing bugs and u don't want to do this in your main branch when u fix u can merge branches.
+
+
+Create a new Branch : git branch <name_of_the_branch>
+check for current branch : git branch
+switch to new branch : git checkout <name_of_new_branch>
+for exit with some command press   :q
+for merging branches: go to main branch and then hit ' git merge <name_of_new_branch>
+
+for ref u can see my gitignore repo.
+--------------------------------------------------------------------------------------------------------
+
